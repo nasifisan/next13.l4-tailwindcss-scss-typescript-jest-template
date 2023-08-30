@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 // const path = require('path');
+import withBundleAnalyzer from "@next/bundle-analyzer"
+import withPlugins from "next-compose-plugins"
+import { env } from "./env.mjs"
+
 
 const securityHeaders = [
     {
@@ -27,9 +31,7 @@ const securityHeaders = [
         value: 'no-referrer-when-downgrade'
     }
 ];
-
-
-
+  
 const nextConfig = {
     poweredByHeader: false,
     reactStrictMode: false,
@@ -57,4 +59,6 @@ const nextConfig = {
     }
 }
 
-module.exports = nextConfig
+const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], nextConfig);
+
+export default config;
