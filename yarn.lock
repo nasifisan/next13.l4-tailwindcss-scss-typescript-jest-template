@@ -7116,6 +7116,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "class-variance-authority@npm:0.7.0"
+  dependencies:
+    clsx: 2.0.0
+  checksum: e7fd1fab433ef06f52a1b7b241b70b4a185864deef199d3b0a2c3412f1cc179517288264c383f3b971a00d76811625fc8f7ffe709e6170219e88cd7368f08a20
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:^5.2.2":
   version: 5.3.2
   resolution: "clean-css@npm:5.3.2"
@@ -7235,6 +7244,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
+  languageName: node
+  linkType: hard
+
+"clsx@npm:2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: a2cfb2351b254611acf92faa0daf15220f4cd648bdf96ce369d729813b85336993871a4bf6978ddea2b81b5a130478339c20d9d0b5c6fc287e5147f0c059276e
   languageName: node
   linkType: hard
 
@@ -13196,6 +13212,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-translate-plugin@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "next-translate-plugin@npm:2.5.3"
+  dependencies:
+    typescript: 4.5.2
+  peerDependencies:
+    next-translate: ">= 2.4.1"
+  checksum: a7df2fbfa5f44417862da2d9f7ea1e4505cc21be4216f66c68df2e62f5d3bac7a11346c996d504460984cf079380cde054b31a77440ce6455d3d8d0bd5285e48
+  languageName: node
+  linkType: hard
+
 "next-translate@npm:^2.5.3":
   version: 2.5.3
   resolution: "next-translate@npm:2.5.3"
@@ -13288,6 +13315,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.5.0
     "@typescript-eslint/parser": ^6.5.0
     autoprefixer: 10.4.15
+    class-variance-authority: ^0.7.0
     cross-env: ^7.0.3
     eslint: 8.47.0
     eslint-config-next: 13.4.19
@@ -13304,6 +13332,7 @@ __metadata:
     next: 13.4.19
     next-compose-plugins: ^2.2.1
     next-translate: ^2.5.3
+    next-translate-plugin: ^2.5.3
     patch-package: ^8.0.0
     postcss: 8.4.28
     prettier: ^3.0.3
@@ -13312,6 +13341,7 @@ __metadata:
     react-dom: 18.2.0
     sass: ^1.66.1
     storybook: ^7.4.0
+    tailwind-merge: ^1.14.0
     tailwindcss: 3.3.3
     typescript: 5.2.2
     zod: ^3.22.2
@@ -16367,6 +16397,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwind-merge@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "tailwind-merge@npm:1.14.0"
+  checksum: 8cf5d37f51b3b32e4bdd5544feaed34357bfba2f64f14834cc4a21ac29b0ae22d7255386467a0f1dadb3e38499389efbbabeddcd0b16571af5a0d346a4921877
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:3.3.3":
   version: 3.3.3
   resolution: "tailwindcss@npm:3.3.3"
@@ -16926,6 +16963,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.5.2":
+  version: 4.5.2
+  resolution: "typescript@npm:4.5.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
+  languageName: node
+  linkType: hard
+
 "typescript@npm:5.2.2":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
@@ -16933,6 +16980,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@4.5.2#~builtin<compat/typescript>":
+  version: 4.5.2
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=bcec9a"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: e25e689eba64f7da7cfc43f8ea76cac7176b56caba42655f0a4cb29c0b7c36e67ca54f33df95902859f56108464245d8b45bcdfe21e3d66d9560feb8db780246
   languageName: node
   linkType: hard
 

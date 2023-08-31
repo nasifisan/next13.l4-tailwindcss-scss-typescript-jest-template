@@ -1,6 +1,6 @@
-
-
 // import styles from './styles.module.scss';
+
+import AppButton from '../components/Buttons/AppButton';
 
 // import { usePathname } from 'next/navigation';
 
@@ -11,7 +11,7 @@ const page = async () => {
   await delay(5000);
 
   return (
-    <section className="h-[100vh] w-[100vw] flex flex-col justify-center bg-white">
+    <section className="h-[100vh] w-[100vw] flex flex-col justify-center space-y-200">
       {/* <div className={`flex flex-col justify-center text-center  text-black ${styles.dhruba}`}>{router.split('/')[1]}</div> */}
       <div className="flex justify-center">
         <div className={`cat`}>
@@ -27,8 +27,8 @@ const page = async () => {
             <div className={`muzzle`}></div>
           </div>
         </div>
-        {/* <Test /> */}
       </div>
+      {/* <AppButton /> */}
     </section>
   );
 };
