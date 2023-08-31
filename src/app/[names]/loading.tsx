@@ -1,8 +1,5 @@
-
 const loading = () => {
-  return (
-    <div className="text-white text-xl text-center font-extrabold">loading....</div>
-  )
-}
+  return <div className="text-black text-xl text-center font-extrabold">loading....</div>;
+};
 
 export default loading;

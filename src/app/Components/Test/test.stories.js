@@ -19,6 +19,7 @@ export default config;
 export const GreenTest = Template.bind({});
 GreenTest.args = {
   name: 'Hello World',
+  intent: 'primary',
   //   showSub: false,
   //   background: "yellow-600",
   //   imgUrl: "https://path/to/some/image",

@@ -5,7 +5,7 @@ const buttonVariants = cva(['font-bold border-2'], {
   variants: {
     intent: {
       primary: 'text-black border-blue-950 bg-white',
-      secondary: ' text-red-700',
+      secondary: 'text-red-700 border-cyan-700 bg-green-400',
     },
     textSize: {
       xl: 'text-xl',

@@ -5,12 +5,17 @@ interface Props {
   name: string;
   intent?: 'primary' | 'secondary' | null | undefined;
   textSize?: 'xl' | 'md' | 'sm' | 'xs' | null | undefined;
+  buttonClass?: string | null | undefined;
+  onClick?: () => void;
 }
 
-const AppButton = ({ name, intent, textSize }: Props) => {
+const AppButton = ({ name, intent, textSize, buttonClass, onClick }: Props) => {
   return (
     <>
-      <button onClick={() => {}} className={twMerge(button({ intent: intent, textSize: textSize }))}>
+      <button
+        onClick={onClick}
+        className={twMerge(`${button({ intent: intent, textSize: textSize })} ${buttonClass ?? buttonClass}`)}
+      >
         {name}
       </button>
     </>
