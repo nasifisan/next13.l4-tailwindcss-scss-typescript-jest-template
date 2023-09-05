@@ -1,4 +1,5 @@
 import { configureStore, Middleware } from '@reduxjs/toolkit';
+
 import counterReducer from './slices/counterSlice';
 import { REDUCER_MAPPERS } from '@/constants/ReducerMappers';
 import CounterService from './middlewares/CounterService';
