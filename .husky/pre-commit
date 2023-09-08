@@ -4,22 +4,20 @@
 echo '🏗️👷 Styling your project before committing👷‍♂️🏗️'
 echo 'please be patient, this may take a while...'
 
-COMMIT_PATTERN="^IMO-[1-9][0-9]*:[[:space:]]?.*\.$"
+# COMMIT_PATTERN="^IMO-[1-9][0-9]*:[[:space:]]?.*\.$"
 
-commit_message_file="$(git rev-parse --git-dir)/COMMIT_EDITMSG"
-msg=$(cat "$commit_message_file" | sed '/^#.*/d')
+# commit_message_file="$(git rev-parse --git-dir)/COMMIT_EDITMSG"
+# msg=$(cat "$commit_message_file" | sed '/^#.*/d')
 
 
-# Use a regular expression to capture the prefix part
-if [[ "$msg" =~ ($COMMIT_PATTERN) ]]; then
-  prefix="${BASH_REMATCH[1]}"  # Captured prefix
-else
-  echo "Debug: Commit message does not match pattern."
-  echo -e "Error commit message: $msg does not follow the conventional commit standard, e.g.  'IMO-1234: Play the commit game.' "
-  exit 1
-fi
-
-echo "Debug: Captured prefix is: $prefix"
+# # Use a regular expression to capture the prefix part
+# if [[ "$msg" =~ ($COMMIT_PATTERN) ]]; then
+#   prefix="${BASH_REMATCH[1]}"  # Captured prefix
+# else
+#   echo "Debug: Commit message does not match pattern."
+#   echo -e "Error commit message: $msg does not follow the conventional commit standard, e.g.  'IMO-1234: Play the commit game.' "
+#   exit 1
+# fi
  
 # Check ESLint Standards
 yarn lint ||
