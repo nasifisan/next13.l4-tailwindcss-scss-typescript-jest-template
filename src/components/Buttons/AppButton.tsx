@@ -1,5 +1,5 @@
+import { button } from '@/variants/Button';
 import { twMerge } from 'tailwind-merge';
-import { button } from '../../../variants/Button';
 
 interface Props {
   name: string;

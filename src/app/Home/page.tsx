@@ -2,8 +2,8 @@
 
 import { useAppDispatch, useAppSelector } from '@/hooks/StoreHooks';
 import useTranslation from 'next-translate/useTranslation';
-import AppButton from '../components/Buttons/AppButton';
 import { decrement, increment } from '@/redux/slices/counterSlice';
+import AppButton from '@/components/Buttons/AppButton';
 
 export default function AnotherHome() {
   const { t, lang } = useTranslation();

@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "next", "prettier"],
   "rules": {
     "no-loops/no-loops": 2,
     "no-console": 1,

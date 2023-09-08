@@ -1,6 +1,7 @@
 // import styles from './styles.module.scss';
 'use client';
-import AppButton from '../components/Buttons/AppButton';
+
+import AppButton from '@/components/Buttons/AppButton';
 
 // import { usePathname } from 'next/navigation';
 
