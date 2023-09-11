@@ -4,7 +4,12 @@
   "rules": {
     "no-loops/no-loops": 2,
     "no-console": 1,
-    "prettier/prettier": 2
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "no-loops", "prettier"]

@@ -1,6 +1,7 @@
 import { Providers } from '@/components/lib/Provider';
 import './globals.scss';
 import type { Metadata } from 'next';
+import AuthManager from '@/components/Auth/AuthManager';
 
 export const metadata: Metadata = {
   title: 'My Blog',
@@ -11,7 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <AuthManager>{children}</AuthManager>
+        </Providers>
       </body>
     </html>
   );

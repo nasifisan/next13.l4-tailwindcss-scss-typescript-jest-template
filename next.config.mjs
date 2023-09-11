@@ -61,6 +61,6 @@ const nextConfig = {
   ...nextTranslate(),
 };
 
-const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], nextConfig);
+const config = withPlugins([[withBundleAnalyzer({ enabled: env.NEXT_PUBLIC_ANALYZE })]], nextConfig);
 
 export default config;
