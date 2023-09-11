@@ -1,7 +1,7 @@
 import { Providers } from '@/components/lib/Provider';
 import './globals.scss';
 import type { Metadata } from 'next';
-import AuthManager from '@/components/Auth/AuthManager';
+import AuthManager from '../components/Auth/AuthManager';
 
 export const metadata: Metadata = {
   title: 'My Blog',
