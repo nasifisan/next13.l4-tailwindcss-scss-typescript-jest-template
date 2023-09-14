@@ -1,12 +1,12 @@
-import { configureStore, Middleware } from '@reduxjs/toolkit';
+import { configureStore, Middleware, combineReducers } from '@reduxjs/toolkit';
 
 import counterReducer from './slices/counterSlice';
 import { REDUCER_MAPPERS } from '@/constants/ReducerMappers';
 import CounterService from './middlewares/CounterService';
 
-const staticReducers = {
+const staticReducers = combineReducers({
   [REDUCER_MAPPERS.COUNTER]: counterReducer,
-};
+});
 
 const middlewares: Middleware[] = [CounterService.middleware];
 
@@ -19,6 +19,7 @@ export const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: true,
     }).concat<Middleware[]>(middlewares),
+  devTools: true,
 });
 
 export type RootState = ReturnType<typeof store.getState>;
