@@ -1,8 +1,7 @@
 {
-    "locales": ["en", "kr"],
-    "defaultLocale": "en",
-    "pages": {
-        "*": ["common"],
-        "rgx:/Home/*": ["common"]
-    }
+  "locales": ["en", "kr"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"]
+  }
 }

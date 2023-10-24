@@ -13,10 +13,16 @@ coverage
 out/
 build
 .swc
+analyze
+
+#installation
+.yarn
 
 #storybook
-.storybook
 storybook-static
+
+#vscode
+.vscode
 
 # misc
 .DS_Store
